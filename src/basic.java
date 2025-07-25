@@ -18,7 +18,6 @@ public class basic {
         System.out.print("there are " +a+ " types");
     }
 }
-                          */
 
 import java.util.Scanner;
 
@@ -52,6 +51,48 @@ public class basic {
         }
     }
 }
+                          */
+
+// billing
+
+import java.util.Scanner;
+
+public class basic {
+    public static void main(String[] args) {
+        int quantity;
+        float price;
+        double total;
+        String product;
+        Scanner sc = new Scanner(System.in);
+
+        while (true) {
+            System.out.println("\n--- Product Billing ---");
+
+            System.out.print("Enter your product name: ");
+            product = sc.nextLine();
+
+            System.out.print("Enter the price: ");
+            price = sc.nextFloat();
+
+            System.out.print("Enter the quantity: ");
+            quantity = sc.nextInt();
+            sc.nextLine(); // consume newline
+
+            total = price * quantity;
+            System.out.println("The total amount for " + product + " is: " + total);
+
+            System.out.print("Do you want to continue? (yes/no): ");
+            String choice = sc.nextLine();
+            if (choice.equalsIgnoreCase("no")) {
+                System.out.println("Thank you for using the billing system!");
+                break;
+            }
+        }
+
+        sc.close();
+    }
+}
+
 
 
 
