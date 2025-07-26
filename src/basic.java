@@ -51,7 +51,6 @@ public class basic {
         }
     }
 }
-                          */
 
 // billing
 
@@ -92,6 +91,57 @@ public class basic {
         sc.close();
     }
 }
+                          */
+
+import java.util.Scanner;
+
+public class basic {
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+        String grade;
+
+
+        while (true) {
+            System.out.print("Enter your marks (or type 'exit' to quit): ");
+            String input = sc.nextLine();
+            if (input.equalsIgnoreCase("exit")) {
+                System.out.println("Thank you!");
+                break;
+            }
+            try {
+                int marks = Integer.parseInt(input);
+
+                if (marks < 34) {
+                    grade = "F";
+                } else if (marks < 50) {
+                    grade = "E";
+                } else if (marks < 60) {
+                    grade = "D";
+                } else if (marks < 70) {
+                    grade = "C";
+                } else if (marks < 80) {
+                    grade = "B";
+                } else if (marks < 90) {
+                    grade = "A";
+                } else if (marks <= 100) {
+                    grade = "S";
+
+                } else {
+                    System.out.println("Invalid Input");
+                    continue;
+                }
+                System.out.println("Your grade: " + grade);
+
+            } catch (NumberFormatException e) {
+                System.out.println("Invalid Input");
+            }
+
+        }
+    }
+}
+
+
 
 
 
