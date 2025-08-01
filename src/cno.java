@@ -1,55 +1,57 @@
 import java.util.Scanner;
 
+// 📦 This is the main class (entry point of the program)
 public class cno {
     public static void main(String[] args) {
-        String name;
-        int s1, s2, s3;
+
+        // 👇 Creating an object of the Car class using the constructor
+        Car benz = new Car("Mercedes-Benz", 2022);
+        benz.setSpeed(120); // Setting attribute using method
+
+        // 🖨️ Accessing object data (attribute and method)
+        System.out.println("Brand: " + benz.brand);         // Attribute
+        System.out.println("Model Year: " + benz.modelYear); // Attribute
+        System.out.println("Speed: " + benz.getSpeed());     // Method
+
+        // 🎯 Method Overloading: same method name but different parameters
+        benz.display(); // No parameter
+        benz.display("This car is premium."); // With one String parameter
+    }
+}
 
 
+// 🚗 Class Definition
+class Car {
 
-        Scanner sc = new Scanner(System.in);
+    // 🔧 Attributes (also called fields or variables)
+    String brand;
+    int modelYear;
+    int speed;
 
-        System.out.print("Enter ur name: ");
-        name = sc.nextLine();
-        System.out.print("Subject 1 marks: ");
-        s1 = sc.nextInt();
-        System.out.print("Subject 2 marks: ");
-        s2 = sc.nextInt();
-        System.out.print("Subject 3 marks: ");
-        s3 = sc.nextInt();
-
-        System.out.println("Student: " + name);
-        System.out.println("Total Marks: " + totalMarks(s1, s2, s3));
-        System.out.println("Average: " + totalAverage(s1, s2, s3));
-        System.out.println("Result: " + Result(totalAverage(s1, s2, s3)));
-
-//        System.out.println("Student: ");
-//        System.out.println("Total Marks: ");
-//        System.out.println("Average: ");
-//        System.out.println("Result: ");
-
+    // 🚀 Constructor (called when an object is created)
+    Car(String brandName, int year) {
+        brand = brandName;     // Assigning value to attribute
+        modelYear = year;
+        speed = 0;             // Default speed
     }
 
-
-    static int totalMarks(int a, int b, int c) {
-        return a + b + c;
-
+    // 🧠 Method to set speed
+    void setSpeed(int s) {
+        speed = s;
     }
 
-    static float totalAverage(int a, int b, int c) {
-        return (float) (a + b + c) / 3;
+    // 📥 Method to get current speed
+    int getSpeed() {
+        return speed;
     }
 
-    static String Result(float a) {
-        String result;
-        if (a < 35) {
-            result = "FAIL";
+    // 📢 Simple method without parameters
+    void display() {
+        System.out.println("This is a car object.");
+    }
 
-        } else {
-
-            result = "PASS";
-
-        }
-        return result;
+    // 📢 Overloaded method: same name, but takes one parameter
+    void display(String message) {
+        System.out.println(message);
     }
 }

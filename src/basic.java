@@ -135,6 +135,8 @@ public class basic {
 
             } catch (NumberFormatException e) {
                 System.out.println("Invalid Input");
+                
+
             }
 
         }
