@@ -6,6 +6,7 @@ public class cno {
 
         // 👇 Creating an object of the Car class using the constructor
         Car benz = new Car("Mercedes-Benz", 2022);
+        Car bugatti = new Car("red", 2023);
         benz.setSpeed(120); // Setting attribute using method
 
         // 🖨️ Accessing object data (attribute and method)
@@ -13,9 +14,13 @@ public class cno {
         System.out.println("Model Year: " + benz.modelYear); // Attribute
         System.out.println("Speed: " + benz.getSpeed());     // Method
 
+
+        System.out.println("Brand: " + bugatti.brand);         // Attribute
+        System.out.println("Model Year: " + bugatti.modelYear);
+
         // 🎯 Method Overloading: same method name but different parameters
         benz.display(); // No parameter
-        benz.display("This car is premium."); // With one String parameter
+        benz.display("This car is premium.");benz.display("This car"); // With one String parameter
     }
 }
 
