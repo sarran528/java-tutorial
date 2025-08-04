@@ -4,6 +4,7 @@ public class oops {
 
         //inheritance - attributes and method from one class to another
         // extends keyword in used to pass the parent methods to the child
+        //
 
         children sarran = new children();
         System.out.println(sarran.age);
