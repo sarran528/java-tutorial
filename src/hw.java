@@ -28,9 +28,29 @@ public class hw {
 //        autoMorphicNum();
 //        harshad();
 //        harshadRange();
-        neonNum();
+//        neonNum();
+        neonRange();
 
 
+    }
+
+    static void neonRange() {
+        int range = sc.nextInt();
+
+        for (int i = 1; i <= range; i++) {
+            int square = i * i;
+            int sum = 0;
+
+            while (square != 0) {
+                int temp = square % 10;
+                sum += temp;
+                square /= 10;
+            }
+
+            if (sum == i) {
+                System.out.println(i);
+            }
+        }
     }
 
     static void neonNum() {
