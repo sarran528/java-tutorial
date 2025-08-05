@@ -18,34 +18,81 @@ public class hw {
 //        integer();
 //        sumOfEven();
 //        multiplicationTable();
-//    bitWiseOperator();
+//        bitWiseOperator();
 //        Fibonacci();
 //        reverse();
-//        pallindrome();
+//        palindrome();
 //        perfectNum();
 //        perfectRange();
-        strongNum();
+//        strongNum();
+//        autoMorphicNum();
+//        harshad();
+        harshadRange();
 
     }
-static void strongNum(){
-        int fact=1,strong=0;
-int num = sc.nextInt();int org=num;
-        while (num!=0){
 
-            int temp = num%10;
-            for(int i=1;i<=temp;i++){
-                fact*= i;
+    static void harshadRange() {
+        int range = sc.nextInt();
+//        int org = num;
+
+        for (int i = 1; i <= range; i++) {
+            int sum = 0;int x = i;
+            while (x != 0) {
+                int temp = x % 10;
+                sum += temp;
+                x /= 10;
+            }
+
+            if (i % sum == 0) {
+                System.out.println(i);
+            }
+        }
+    }
+
+    static void harshad() {
+
+        int num = sc.nextInt();
+        int org = num;
+        int sum = 0;
+
+        while (num != 0) {
+            int temp = num % 10;
+            sum += temp;
+            num /= 10;
+        }
+
+        System.out.printf("the %d is %s", org, org % sum == 0 ? "harshad number" : "not a harshad number");
+    }
+
+    static void autoMorphicNum() {
+
+        int num = sc.nextInt();
+        int square = num * num;
+        int lastDigit = square % 10;
+        System.out.printf("the number is %s", num == lastDigit ? "auto morphic" : "not auto morphic");
+    }
+
+    static void strongNum() {
+        int fact = 1, strong = 0;
+        int num = sc.nextInt();
+        int org = num;
+        while (num != 0) {
+
+            int temp = num % 10;
+            for (int i = 1; i <= temp; i++) {
+                fact *= i;
             }
 
             strong += fact;
-            fact= 1;
-            num = num/10;
+            fact = 1;
+            num = num / 10;
 
         }
-    System.out.printf(" the %d is %s", strong, strong==org?"strong":"not strong");
+        System.out.printf(" the %d is %s", strong, strong == org ? "strong" : "not strong");
 
 
-}
+    }
+
     static void divisibleOfThree() {
 //        Scanner sc = new Scanner(System.in);
         System.out.print("Enter a range: ");
@@ -199,7 +246,7 @@ int num = sc.nextInt();int org=num;
         System.out.println(rev);
     }
 
-    static void pallindrome() {
+    static void palindrome() {
         int org, rev = 0;
         int a = sc.nextInt();
         org = a;
@@ -240,18 +287,17 @@ int num = sc.nextInt();int org=num;
             for (int j = 1; j <= i / 2; j++) {
 
                 if (i % j == 0) {
-                  perfect += j;
+                    perfect += j;
                 }
             }
             if (i == perfect) {
                 System.out.println(i);
 
             }
-            perfect=0;
+            perfect = 0;
 
         }
     }
-
 
 
 }
