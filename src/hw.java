@@ -27,8 +27,24 @@ public class hw {
 //        strongNum();
 //        autoMorphicNum();
 //        harshad();
-        harshadRange();
+//        harshadRange();
+        neonNum();
 
+
+    }
+
+    static void neonNum() {
+        int num = sc.nextInt();
+        int square = num * num;
+        int sum = 0;
+
+        while (square != 0) {
+            int temp = square % 10;
+            sum += temp;
+            square /= 10;
+        }
+
+        System.out.printf("the number %d is %s", num, sum == num ? "neon" : "not neon");
     }
 
     static void harshadRange() {
