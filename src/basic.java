@@ -91,7 +91,7 @@ public class basic {
         sc.close();
     }
 }
-                          */sdojfndsjv
+                          */sdojfn
 
 import java.util.Scanner;
 
