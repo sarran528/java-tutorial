@@ -26,12 +26,38 @@ public class hw {
 //        perfectRange();
 //        strongNum();
 //        autoMorphicNum();
+
 //        harshad();
 //        harshadRange();
 //        neonNum();
-        neonRange();
+//        neonRange();
+//        System.out.print(27*27);
+        autoMorphicRange();
 
+    }
 
+    static void autoMorphicRange() {
+
+        int range = sc.nextInt();
+
+        boolean isMorphic = true;
+        int i;
+
+        for(i=1;i<=range;i++) {
+            int org = i;
+            int square = org * org;
+            while (org != 0) {
+
+                if (org%10==square%10){isMorphic=true;}
+                else { isMorphic=false;break;}
+                org/=10;
+                square/=10;
+
+            }
+
+            if (isMorphic){System.out.println(i);}
+
+        }
     }
 
     static void neonRange() {
@@ -72,7 +98,8 @@ public class hw {
 //        int org = num;
 
         for (int i = 1; i <= range; i++) {
-            int sum = 0;int x = i;
+            int sum = 0;
+            int x = i;
             while (x != 0) {
                 int temp = x % 10;
                 sum += temp;
@@ -103,9 +130,19 @@ public class hw {
     static void autoMorphicNum() {
 
         int num = sc.nextInt();
-        int square = num * num;
-        int lastDigit = square % 10;
-        System.out.printf("the number is %s", num == lastDigit ? "auto morphic" : "not auto morphic");
+        int square = num*num;
+        boolean isMorphic=false;
+
+        while(num!=0){
+
+            if (num%10==square%10){isMorphic=true;}
+            else { isMorphic=false;break;}
+            num/=10;
+            square/=10;
+
+        }
+        System.out.printf(" number is %s",isMorphic?"Automorphic":"not Automorphic "  );
+
     }
 
     static void strongNum() {
