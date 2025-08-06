@@ -90,8 +90,8 @@ public class basic {
 
         sc.close();
     }
-}sfdfgfsf
-                          */s
+}
+                          */
 
 import java.util.Scanner;
 
