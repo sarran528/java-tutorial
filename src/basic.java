@@ -91,7 +91,7 @@ public class basic {
         sc.close();
     }
 }
-                          */asdasdfas
+                          */
 
 import java.util.Scanner;
 
