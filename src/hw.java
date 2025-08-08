@@ -14,7 +14,7 @@ public class hw {
 //        System.out.print("Enter ur age: ");
 //        int a = sc.nextInt();
 //        System.out.printf("%s", a>18?"eligible":"not eligible");
-//asdsdad
+//asds
 //        integer();
 //        sumOfEven();
 //        multiplicationTable();
