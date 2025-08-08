@@ -17,6 +17,8 @@ static Scanner sc = new Scanner(System.in);
         //2d array output
         for(int i=0;i<m;i++){
 
+
+
         }
 
     }
