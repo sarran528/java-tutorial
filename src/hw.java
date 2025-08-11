@@ -26,7 +26,7 @@ public class hw {
 //        perfectRange();
 //        strongNum();
 //        autoMorphicNum();
-//ascaasasasfasfsa
+//ascaasasasfasfsaascasvv
 //        harshad();
 //        harshadRange();
 //        neonNum();
