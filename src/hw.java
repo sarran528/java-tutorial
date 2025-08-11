@@ -26,7 +26,8 @@ public class hw {
 //        perfectRange();
 //        strongNum();
 //        autoMorphicNum();
-
+//        System.out.print("Enter a number: ");
+//        autoMorphicNum();
 //        harshad();
 //        harshadRange();
 //        neonNum();
