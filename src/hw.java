@@ -34,6 +34,7 @@ public class hw {
 //        neonRange();
 //        System.out.print(27*27);
         autoMorphicRange();
+        //rgfsgwrgrew
 
     }
 
