@@ -34,7 +34,7 @@ public class hw {
 //        neonRange();
 //        System.out.print(27*27);
         autoMorphicRange();
-        //kngwEG goGW OGHewu
+        //kngwEG 
 
     }
 
