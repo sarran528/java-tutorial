@@ -19,7 +19,8 @@ public class collections {
 //        reverseElement(arr,len);//has its own output function
 //        findThe2ndLargestElement();
 //        ascendingOrderSort(arr);
-        pattern();
+//        pattern();
+
 //OUTPUT
 //        System.out.print("{");
 //        for(int i=0;i< len;i++){

@@ -24,11 +24,14 @@ public class _2dArray {
 
             }
         }
-        //2d array output
 
-        System.out.printf("%dx%d Matrix is:\n",m,n);
+//        333
 
-//        System.out.print("{");
+//          2d array output
+
+       System.out.printf("%dx%d Matrix is:\n",m,n);
+
+//      System.out.print("{");
         for (int i = 0; i < m; i++) {
             System.out.print("|");
             for (int j = 0; j < n; j++) {
@@ -44,5 +47,21 @@ public class _2dArray {
 
         }
 //        System.out.print("}");
+    }
+
+    static void sumOfDiagonal(int[][] arr,int m , int n){
+
+        int l2r=0,r2l=0;
+
+        for(int i=0;i<=m;i++){
+            for(int j=0;j<=n;j++){
+                if(i==j) {
+                    l2r+=arr[i][j];
+                }
+            }
+        }
+
+               System.out.println("the left diagonal sum is : "+l2r);
+
     }
 }
