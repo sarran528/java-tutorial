@@ -25,7 +25,8 @@ public class _2dArray {
             }
         }
 
-//        333
+        sumOfDiagonal(arr,m,n);
+
 
 //          2d array output
 
@@ -51,17 +52,26 @@ public class _2dArray {
 
     static void sumOfDiagonal(int[][] arr,int m , int n){
 
-        int l2r=0,r2l=0;
+        int diagonalSum=0;
 
-        for(int i=0;i<=m;i++){
-            for(int j=0;j<=n;j++){
+        for(int i=0;i<m;i++){
+            for(int j=0;j<n;j++){
                 if(i==j) {
-                    l2r+=arr[i][j];
+                    diagonalSum+=arr[i][j];
                 }
             }
         }
+        System.out.println("the left diagonal sum is : "+diagonalSum);
+        diagonalSum=0;
 
-               System.out.println("the left diagonal sum is : "+l2r);
+        int i=m-1,j=0;
+        while(i>=0){
+
+            diagonalSum+=arr[i][j];
+            i--;
+            j++;
+        }
+            System.out.println("the Right diagonal sum is : "+diagonalSum);
 
     }
 }
