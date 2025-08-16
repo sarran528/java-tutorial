@@ -1,5 +1,5 @@
 import java.util.Scanner;
-import java.util.Stack;
+import java.util.HashSet;
 
 public class collections {
     static Scanner sc = new Scanner(System.in);
@@ -18,15 +18,23 @@ public class collections {
 //        list.display();
 //        list.insertAtEnd(5);
 //        list.display();
-Stack<Integer> stk = new Stack<>();
-        stk.push(15);
-        stk.push(14);
-        stk.push(12);
-        stk.push(11);
-        System.out.println(stk);
-        System.out.println(stk.peek());
-        stk.pop();
-        System.out.println(stk);
+//Stack<Integer> stk = new Stack<>();
+//        stk.push(15);
+//        stk.push(14);
+//        stk.push(12);
+//        stk.push(11);
+//        System.out.println(stk);
+//        System.out.println(stk.peek());
+//        stk.pop();
+//        System.out.println(stk);
+        HashSet<Integer> hsh = new HashSet<>();
+        hsh.add(1);
+        hsh.add(2);
+        hsh.add(3);
+        System.out.println(hsh);
+        hsh.remove(2);
+        System.out.println(hsh);
+        System.out.println(hsh.contains(2));
 
 
 
