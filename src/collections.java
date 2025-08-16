@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import java.util.Stack;
 
 public class collections {
     static Scanner sc = new Scanner(System.in);
@@ -6,18 +7,26 @@ public class collections {
     public static void main(String[] args) {
 
 
-        LinkedList list = new LinkedList();
-        list.insertAtBeginning(1);
-        list.insertAtBeginning(2);
-        list.insertAtBeginning(3);
-        list.display();
-        list.insertAtPos(2, 4);
-        list.display();
-        list.deleteAtPos(0);
-        list.display();
-        list.insertAtEnd(5);
-        list.display();
-
+//        LinkedList list = new LinkedList();
+//        list.insertAtBeginning(1);
+//        list.insertAtBeginning(2);
+//        list.insertAtBeginning(3);
+//        list.display();
+//        list.insertAtPos(2, 4);
+//        list.display();
+//        list.deleteAtPos(0);
+//        list.display();
+//        list.insertAtEnd(5);
+//        list.display();
+Stack<Integer> stk = new Stack<>();
+        stk.push(15);
+        stk.push(14);
+        stk.push(12);
+        stk.push(11);
+        System.out.println(stk);
+        System.out.println(stk.peek());
+        stk.pop();
+        System.out.println(stk);
 
 
 
