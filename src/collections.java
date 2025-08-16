@@ -4,7 +4,25 @@ public class collections {
     static Scanner sc = new Scanner(System.in);
 
     public static void main(String[] args) {
-        int len;
+
+
+        LinkedList list = new LinkedList();
+        list.insertAtBeginning(1);
+        list.insertAtBeginning(2);
+        list.insertAtBeginning(3);
+        list.display();
+        list.insertAtPos(2, 4);
+        list.display();
+        list.deleteAtPos(0);
+        list.display();
+        list.insertAtEnd(5);
+        list.display();
+
+
+
+
+
+//        int len;
 //INPUT
 //        System.out.println("*****************");
 //        System.out.print("Enter the size of the arr : ");
@@ -35,24 +53,24 @@ public class collections {
 
     static void pattern() {
         int n = 4;
-        for (int i = 1; i <=n; i++) {
+        for (int i = 1; i <= n; i++) {
             for (int j = 0; j < n - i; j++) {
                 System.out.print(" ");
             }
 
-            for (int j = 1; j <=i; j++) {
+            for (int j = 1; j <= i; j++) {
                 System.out.print("* ");
             }
 
 
             System.out.print("\n");
         }
-        for (int i = n-1; i >0; i--) {
+        for (int i = n - 1; i > 0; i--) {
             for (int j = 1; j <= n - i; j++) {
                 System.out.print(" ");
             }
 
-            for (int j = 1; j <=i; j++) {
+            for (int j = 1; j <= i; j++) {
                 System.out.print("* ");
             }
 
