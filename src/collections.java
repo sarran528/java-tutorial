@@ -36,9 +36,6 @@ public class collections {
         System.out.println(hsh);
         System.out.println(hsh.contains(2));
 
-
-
-
 //        int len;
 //INPUT
 //        System.out.println("*****************");

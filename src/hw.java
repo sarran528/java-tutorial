@@ -33,9 +33,39 @@ public class hw {
 //        neonNum();
 //        neonRange();
 //        System.out.print(27*27);
-        autoMorphicRange();
-        
+//        autoMorphicRange();
+//        alphaBetPatterns();
+        magicNumber();
 
+
+    }
+
+    static void magicNumber() {
+        System.out.println("Enter a number");
+        int num = sc.nextInt();
+        int sum = 0;
+        while (num > 9) {
+            while (num != 0) {
+                sum = sum+num%10;
+                num = num/10;
+            }
+            num = sum;
+            sum=0;
+        }
+        System.out.printf("This number is  %s", num == 1 ? "magic number" : "not magic number");
+    }
+
+    static void alphaBetPatterns() {
+        int n = 5;
+
+        for (int i = 1; i <= n; i++) {
+            char x = 'A';
+            for (int j = 1; j <= i; j++) {
+                System.out.print(x);
+                x++;
+            }
+            System.out.println();
+        }
     }
 
     static void autoMorphicRange() {
@@ -45,19 +75,25 @@ public class hw {
         boolean isMorphic = true;
         int i;
 
-        for(i=1;i<=range;i++) {
+        for (i = 1; i <= range; i++) {
             int org = i;
             int square = org * org;
             while (org != 0) {
 
-                if (org%10==square%10){isMorphic=true;}
-                else { isMorphic=false;break;}
-                org/=10;
-                square/=10;
+                if (org % 10 == square % 10) {
+                    isMorphic = true;
+                } else {
+                    isMorphic = false;
+                    break;
+                }
+                org /= 10;
+                square /= 10;
 
             }
 
-            if (isMorphic){System.out.println(i);}
+            if (isMorphic) {
+                System.out.println(i);
+            }
 
         }
     }
@@ -132,18 +168,22 @@ public class hw {
     static void autoMorphicNum() {
 
         int num = sc.nextInt();
-        int square = num*num;
-        boolean isMorphic=false;
+        int square = num * num;
+        boolean isMorphic = false;
 
-        while(num!=0){
+        while (num != 0) {
 
-            if (num%10==square%10){isMorphic=true;}
-            else { isMorphic=false;break;}
-            num/=10;
-            square/=10;
+            if (num % 10 == square % 10) {
+                isMorphic = true;
+            } else {
+                isMorphic = false;
+                break;
+            }
+            num /= 10;
+            square /= 10;
 
         }
-        System.out.printf(" number is %s",isMorphic?"Automorphic":"not Automorphic "  );
+        System.out.printf(" number is %s", isMorphic ? "Automorphic" : "not Automorphic ");
 
     }
 
