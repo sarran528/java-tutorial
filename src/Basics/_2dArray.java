@@ -1,3 +1,5 @@
+package Basics;
+
 import java.util.Scanner;
 
 public class _2dArray {
@@ -25,12 +27,12 @@ public class _2dArray {
             }
         }
 
-        sumOfDiagonal(arr,m,n);
-
+//        sumOfDiagonal(arr,m,n);
+        MaxMinvalue(arr, m, n);
 
 //          2d array output
 
-       System.out.printf("%dx%d Matrix is:\n",m,n);
+        System.out.printf("%dx%d Matrix is:\n", m, n);
 
 //      System.out.print("{");
         for (int i = 0; i < m; i++) {
@@ -38,13 +40,15 @@ public class _2dArray {
             for (int j = 0; j < n; j++) {
 
                 System.out.print(arr[i][j]);
-                if (j!= n-1) {
+                if (j != n - 1) {
                     System.out.print(",");
 
                 }
-            }System.out.print("|");
-            if (i != m-1){
-            System.out.print("\n");}
+            }
+            System.out.print("|");
+            if (i != m - 1) {
+                System.out.print("\n");
+            }
 
         }
 
@@ -57,28 +61,42 @@ public class _2dArray {
 //        System.out.print("}");
     }
 
-    static void sumOfDiagonal(int[][] arr,int m , int n){
+    static void MaxMinvalue(int[][] arr, int m, int n) {
+        int Max = arr[0][0];
+        int Min = arr[0][0];
 
-        int diagonalSum=0;
+        for (int i = 0; i < m; i++) {
+            for (int j = 0; j < n; j++) {
 
-        for(int i=0;i<m;i++){
-            for(int j=0;j<n;j++){
-                if(i==j) {
-                    diagonalSum+=arr[i][j];
+                
+
+            }
+        }
+
+    }
+
+    static void sumOfDiagonal(int[][] arr, int m, int n) {
+
+        int diagonalSum = 0;
+
+        for (int i = 0; i < m; i++) {
+            for (int j = 0; j < n; j++) {
+                if (i == j) {
+                    diagonalSum += arr[i][j];
                 }
             }
         }
-        System.out.println("the left diagonal sum is : "+diagonalSum);
-        diagonalSum=0;
+        System.out.println("the left diagonal sum is : " + diagonalSum);
+        diagonalSum = 0;
 
-        int i=m-1,j=0;
-        while(i>=0){
+        int i = m - 1, j = 0;
+        while (i >= 0) {
 
-            diagonalSum+=arr[i][j];
+            diagonalSum += arr[i][j];
             i--;
             j++;
         }
-            System.out.println("the Right diagonal sum is : "+diagonalSum);
+        System.out.println("the Right diagonal sum is : " + diagonalSum);
 
     }
 }
