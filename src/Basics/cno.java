@@ -1,3 +1,4 @@
+package Basics;
 import java.util.Scanner;
 
 // 📦 This is the main class (entry point of the program)

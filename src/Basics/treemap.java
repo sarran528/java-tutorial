@@ -1,3 +1,4 @@
+package Basics;
 public class treemap {
 
     public static void main(String[] args) {

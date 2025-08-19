@@ -1,3 +1,5 @@
+package Basics;
+
 public class LinkedList {
     Node head;
 
@@ -18,7 +20,7 @@ public class LinkedList {
     public void insertAtBeginning(int val) {
         Node newNode = new Node(val);
 
-        if (head == null)//empty list
+        if (head == null)// empty list
             head = newNode;
 
         else {
@@ -33,7 +35,6 @@ public class LinkedList {
 
             System.out.print(temp.data + " ");
             temp = temp.next;
-
 
         }
         System.out.println();
@@ -86,6 +87,4 @@ public class LinkedList {
         temp.next = newNode;
     }
 
-
 }
-

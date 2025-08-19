@@ -1,3 +1,4 @@
+package Basics;
 public class conditionalStatements {
     public static void main(String[] args) {
 
