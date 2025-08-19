@@ -2,6 +2,7 @@ package Collections;
 public class TestMain {
     public static void main(String[] args) {
         MyCollection<String> list = new MyArrayList<>();
+        MyCollection<String> link = new MyLinkedList<>();
         list.add("Hello");
         list.add("World");
         list.add("!");
