@@ -1,6 +1,7 @@
 package Basics;
-import java.util.Scanner;
-import java.util.HashSet;
+
+import java.util.*;
+
 
 public class collections {
     static Scanner sc = new Scanner(System.in);
@@ -28,15 +29,21 @@ public class collections {
 //        System.out.println(stk.peek());
 //        stk.pop();
 //        System.out.println(stk);
-        HashSet<Integer> hsh = new HashSet<>();
-        hsh.add(1);
-        hsh.add(2);
-        hsh.add(3);
-        System.out.println(hsh);
-        hsh.remove(2);
-        System.out.println(hsh);
-        System.out.println(hsh.contains(2));
-
+//        HashSet<Integer> hsh = new HashSet<>();
+//        hsh.add(1);
+//        hsh.add(2);
+//        hsh.add(3);
+//        System.out.println(hsh);
+//        hsh.remove(2);
+//        System.out.println(hsh);
+//        System.out.println(hsh.contains(2));
+        ArrayList<Integer> list = new ArrayList<>(Arrays.asList(2, 4, 3, 5, 3, 4));
+        ListIterator<Integer> it = list.listIterator(list.size());
+        System.out.println(3);
+        while (it.hasPrevious()) {
+            int a = it.previous();
+            System.out.println(a);
+        }
 //        int len;
 //INPUT
 //        System.out.println("*****************");
