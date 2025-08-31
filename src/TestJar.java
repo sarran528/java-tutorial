@@ -4,7 +4,7 @@ import java.sql.SQLException;
 
 public class TestJar {
 
-    private static final String URL = "jdbc:mysql://localhost:3306/practie_db";
+    private static final String URL = "jdbc:mysql://localhost:3306/practice_db";
     private static final String USER = "root";
     private static final String PASSWORD = "@Onepieceis3eal";
 

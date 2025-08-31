@@ -82,12 +82,12 @@ public class MySql {
 //        dao.insertStudent("David", 23);
 //        dao.insertStudent("Alice", 21);
 
-        dao.readStudents();
+//        dao.readStudents();
 
-//        dao.updateStudent(1, 30);
+        dao.updateStudent(1, 30);
 //
 //        dao.deleteStudent(2);
 //
-//        dao.readStudents();
+        dao.readStudents();
     }
 }

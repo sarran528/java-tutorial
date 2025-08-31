@@ -3,17 +3,20 @@ public class TestMain {
     public static void main(String[] args) {
         MyCollection<String> list = new MyArrayList<>();
         MyCollection<String> link = new MyLinkedList<>();
-        list.add("Hello");
-        list.add("World");
-        list.add("!");
+        link.add("Hello");
+        link.add("World");
+        link.add("!");
 
-        System.out.println("Size: " + list.size());  // 3
-        System.out.println("Contains 'World'? " + list.contains("World")); // true
+        for (MyIterator<String> it = link.iterator(); it.hasNext();) {
+            System.out.printf(it.next());
+        }
+        System.out.println("Size: " + link.size());  // 3
+        System.out.println("Contains 'World'? " + link.contains("World")); // true
 
-        list.remove("World");
-        System.out.println("Size after removal: " + list.size()); // 2
+        link.remove("World");
+        System.out.println("Size after removal: " + link.size()); // 2
 
-        for (MyIterator<String> it = list.iterator(); it.hasNext();) {
+        for (MyIterator<String> it = link.iterator(); it.hasNext();) {
             System.out.println(it.next());
         }
     }

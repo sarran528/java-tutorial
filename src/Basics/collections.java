@@ -1,6 +1,7 @@
 package Basics;
 
 import java.util.*;
+import java.util.LinkedList;
 
 
 public class collections {
@@ -37,13 +38,22 @@ public class collections {
 //        hsh.remove(2);
 //        System.out.println(hsh);
 //        System.out.println(hsh.contains(2));
-        ArrayList<Integer> list = new ArrayList<>(Arrays.asList(2, 4, 3, 5, 3, 4));
-        ListIterator<Integer> it = list.listIterator(list.size());
-        System.out.println(3);
-        while (it.hasPrevious()) {
-            int a = it.previous();
-            System.out.println(a);
-        }
+//        ArrayList<Integer> list = new ArrayList<>(Arrays.asList(2, 4, 3, 5, 3, 4));
+//        ListIterator<Integer> it = list.listIterator(list.size());
+//        System.out.println(3);
+//        while (it.hasPrevious()) {
+//            int a = it.previous();
+//            System.out.println(a);
+//        LinkedList<String> employees = new LinkedList<>();
+//        employees.add("John");
+//        employees.add("Mike");
+//        employees.add("Sara");
+//        employees.add("Anna");
+//
+//        ListIterator<String> it = employees.listIterator(employees.size());
+//        while (it.hasPrevious()) {
+//            System.out.println(it.previous());
+//        }
 //        int len;
 //INPUT
 //        System.out.println("*****************");
