@@ -54,6 +54,19 @@ public class collections {
 //        while (it.hasPrevious()) {
 //            System.out.println(it.previous());
 //        }
+
+//        HashMap<Integer, String> emp = new HashMap<>();
+//        emp.put(101, "John");
+//        emp.put(102, "Mike");
+//        emp.put(103, "Sara");
+//
+//        for (Map.Entry<Integer, String> entry : emp.entrySet()) {
+//            System.out.println("ID: " + entry.getKey() + " Name: " + entry.getValue());
+//        }
+
+        ArrayList<Integer> numbers = new ArrayList<>(Arrays.asList(5, 3, 8, 1, 2));
+        for(int num:numbers) {
+        }
 //        int len;
 //INPUT
 //        System.out.println("*****************");
