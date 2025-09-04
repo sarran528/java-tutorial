@@ -52,7 +52,7 @@ public class homework {
 
 
         PriorityQueue<Integer> pq = new PriorityQueue<>(Arrays.asList(5, 2, 8, 1, 3));
-        System.out.print(pq);
+//        System.out.print(pq);
         while (!pq.isEmpty()) System.out.print(pq.poll() + " "); // ascending order
 
 
