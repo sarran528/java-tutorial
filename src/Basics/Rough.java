@@ -14,7 +14,10 @@ public class Rough {
 
     public static void main(String[] args) {
         int[] arr = {5, 2, 8, 2, 3, 5, 1};
-        int[] unique = Arrays.stream(arr).distinct().sorted() .toArray();
+        int[] unique = Arrays.stream(arr)
+                             .distinct()
+                             .sorted()
+                             .toArray();
 
 
         System.out.println(Arrays.toString(unique));
