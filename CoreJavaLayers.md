@@ -159,26 +159,26 @@ This document outlines the essential layers and topics required for a comprehens
 ## Progress Tracking
 
 | Layer | Status (Not Started/In Progress/Completed) | Notes |
-|-------|-------------------------------------------|-------|
-| 1     | Not Started                               |       |
-| 2     | Not Started                               |       |
-| 3     | Not Started                               |       |
-| 4     | Not Started                               |       |
-| 5     | Not Started                               |       |
-| 6     | Not Started                               |       |
-| 7     | Not Started                               |       |
-| 8     | Not Started                               |       |
-| 9     | Not Started                               |       |
-| 10    | Not Started                               |       |
-| 11    | Not Started                               |       |
-| 12    | Not Started                               |       |
-| 13    | Not Started                               |       |
-| 14    | Not Started                               |       |
-| 15    | Not Started                               |       |
-| 16    | Not Started                               |       |
-| 17    | Not Started                               |       |
-| 18    | Not Started                               |       |
-| 19    | Not Started                               |       |
-| 20    | Not Started                               |       |
-| 21    | Not Started                               |       |
+|-------|---------------------------------------|-------|
+| 1     | Started                               |       |
+| 2     | Not Started                           |       |
+| 3     | Not Started                           |       |
+| 4     | Not Started                           |       |
+| 5     | Not Started                           |       |
+| 6     | Not Started                           |       |
+| 7     | Not Started                           |       |
+| 8     | Not Started                           |       |
+| 9     | Not Started                           |       |
+| 10    | Not Started                           |       |
+| 11    | Not Started                           |       |
+| 12    | Not Started                           |       |
+| 13    | Not Started                           |       |
+| 14    | Not Started                           |       |
+| 15    | Not Started                           |       |
+| 16    | Not Started                           |       |
+| 17    | Not Started                           |       |
+| 18    | Not Started                           |       |
+| 19    | Not Started                           |       |
+| 20    | Not Started                           |       |
+| 21    | Not Started                           |       |
 

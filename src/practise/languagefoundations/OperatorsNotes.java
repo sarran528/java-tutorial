@@ -5,161 +5,53 @@ package practise.languagefoundations;
 TOPIC: OPERATORS IN JAVA
 ========================================================
 
-Operator = symbol that performs an operation on operands
-
-Categories:
-1. Arithmetic Operators
-2. Relational / Comparison Operators
-3. Logical Operators
-4. Bitwise Operators
-5. Shift Operators
-6. Assignment Operators
-7. Unary Operators
-8. Ternary Operator
-9. instanceof Operator
+Operators are special symbols that perform operations on variables and values.
 
 --------------------------------------------------------
 1. ARITHMETIC OPERATORS
 --------------------------------------------------------
-
-OPERATOR   NAME           EXAMPLE    RESULT
-+          Addition        5 + 3      8
--          Subtraction     5 - 3      2
-*          Multiplication  5 * 3      15
-/          Division        5 / 3      1 (int div!)
-%          Modulus         5 % 3      2 (remainder)
-
-CAUTION: 5/3 = 1 (integer division — truncated)
-         5.0/3 = 1.666... (double division)
++  Addition
+-  Subtraction
+*  Multiplication
+/  Division
+%  Modulus (remainder)
 
 --------------------------------------------------------
-2. RELATIONAL / COMPARISON OPERATORS
+2. LOGICAL OPERATORS
 --------------------------------------------------------
-
-OPERATOR   NAME                  RETURNS
-==         Equal to              boolean
-!=         Not equal to          boolean
->          Greater than          boolean
-<          Less than             boolean
->=         Greater than or equal boolean
-<=         Less than or equal    boolean
-
-WARNING: == on reference types compares ADDRESS, not value
-         Use .equals() for content comparison
+&&  Logical AND
+||  Logical OR
+!   Logical NOT
 
 --------------------------------------------------------
-3. LOGICAL OPERATORS
+3. BITWISE OPERATORS
 --------------------------------------------------------
-
-OPERATOR   NAME           BEHAVIOR
-&&         AND (short-ckt) true if BOTH true
-||         OR  (short-ckt) true if EITHER true
-!          NOT             inverts boolean
-
-SHORT-CIRCUIT:
-  && → if left is false, right is NEVER evaluated
-  || → if left is true,  right is NEVER evaluated
-
-NON-SHORT-CIRCUIT:
-  &  → evaluates both sides (also bitwise AND on ints)
-  |  → evaluates both sides (also bitwise OR on ints)
+&   Bitwise AND
+|   Bitwise OR
+^   Bitwise XOR
+~   Bitwise NOT
+<<  Left shift
+>>  Right shift
+>>> Unsigned right shift
 
 --------------------------------------------------------
-4. BITWISE OPERATORS
+4. OTHER COMMON OPERATORS
 --------------------------------------------------------
-
-Work on individual bits of integer types
-
-OPERATOR   NAME           TRUTH TABLE
-&          AND            1&1=1, 1&0=0, 0&0=0
-|          OR             1|1=1, 1|0=1, 0|0=0
-^          XOR            1^1=0, 1^0=1, 0^0=0
-~          NOT / Complement  ~1=0, ~0=1
-
---------------------------------------------------------
-5. SHIFT OPERATORS
---------------------------------------------------------
-
-OPERATOR   NAME              EFFECT
-<<         Left shift         multiply by 2^n
->>         Right shift (signed)  divide by 2^n (preserves sign)
->>>        Right shift (unsigned) fills with 0s
-
-n << k  =  n * 2^k
-n >> k  =  n / 2^k
+=   Assignment
+==  Equality
+!=  Not equal
+<, >, <=, >=  Relational
+++  Increment
+--  Decrement
++=, -=, *=, /=, %=  Compound assignment
 
 --------------------------------------------------------
-6. ASSIGNMENT OPERATORS
+5. KEY POINTS
 --------------------------------------------------------
-
-OPERATOR   EQUIVALENT TO
-=          x = value
-+=         x = x + value
--=         x = x - value
-*=         x = x * value
-/=         x = x / value
-%=         x = x % value
-&=         x = x & value
-|=         x = x | value
-^=         x = x ^ value
-<<=        x = x << value
->>=        x = x >> value
->>>=       x = x >>> value
-
---------------------------------------------------------
-7. UNARY OPERATORS
---------------------------------------------------------
-
-OPERATOR   NAME                EXAMPLE
-+          Unary plus           +5  → 5
--          Unary minus          -5  → -5
-++         Increment            x++ or ++x
---         Decrement            x-- or --x
-!          Logical NOT          !true → false
-
-pre-increment (++x): increments THEN uses value
-post-increment(x++): uses value THEN increments
-
---------------------------------------------------------
-8. TERNARY OPERATOR
---------------------------------------------------------
-
-condition ? valueIfTrue : valueIfFalse
-
-Shorthand for simple if-else
-
---------------------------------------------------------
-9. OPERATOR PRECEDENCE (HIGH → LOW)
---------------------------------------------------------
-
-1. ()          Parentheses
-2. ++ -- !     Unary
-3. * / %       Multiplicative
-4. + -         Additive
-5. << >> >>>   Shift
-6. < <= > >=   Relational
-7. == !=       Equality
-8. &           Bitwise AND
-9. ^           Bitwise XOR
-10. |          Bitwise OR
-11. &&         Logical AND
-12. ||         Logical OR
-13. ?:         Ternary
-14. = += -= …  Assignment
-
-TIP: When in doubt, use parentheses!
-
---------------------------------------------------------
-10. KEY PITFALLS
---------------------------------------------------------
-
-- Integer division: 5/2 = 2 (not 2.5)
-- == vs .equals() on Strings
-- Short-circuit can skip side effects
-- Bitwise & | ^ work on ints (not just booleans)
-- ~ inverts ALL bits (result may surprise you)
-- >>> does NOT work with long as expected sometimes
-- Operator precedence: && binds tighter than ||
+- Arithmetic: work on numbers
+- Logical: work on boolean values
+- Bitwise: work on bits (integers)
+- Operator precedence affects evaluation order
 
 ========================================================
 */
